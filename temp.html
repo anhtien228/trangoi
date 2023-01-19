@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+
+body {
+    background-color:antiquewhite;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center p {
+    font-family: monospace
+}
+
+#chi-trang {
+    position: absolute;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="center">
+  <p id="chi-trang">Chi Trang Ga <i class="fa fa-heart" style="font-size: 18px; color: red"></i>
+  </p>
+</div>
+
+<script>
+  $('#chi-trang').on('mouseover', function() {
+    $(this).animate({
+      'top': Math.random() * window.innerHeight + "px",
+      'left': Math.random() * window.innerWidth + "px"
+    }, "medium");
+  })
+</script>
+
+</body>
+</html>
